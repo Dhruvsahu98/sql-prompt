@@ -1,0 +1,28 @@
+SELECT column_name
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE table_name = 'staff'
+ORDER BY ordinal_position;
+
+
+
+
+Use the following table :
+
+staff[staff_fname,staff_lname,id,gender,mobile_no,doj]
+quota[member_type,max_books,max_duration]
+members[member_no,member_class,member_type,roll_no,id]
+book_issue[member_no,accession_no,doi]
+students[student_fname,student_lname,roll_no,department_code,gender,mobile_no,dob,degree]
+faculty[faculty_fname,faculty_lname,id,department_code,gender,mobile_no,doj]
+book_copies[ISBN_no,accession_no]
+book_catalogue[ISBN_no,title,publisher,year]
+book_authors[ISBN_no,author_fname,author_lname]
+departments[department_code,department_name,department_building]
+
+Use the following condition :
+
+All tables are join using primary and foreign keys
+
+
+
+write above script for postgresql
