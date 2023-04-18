@@ -1,0 +1,23 @@
+Use the following table :
+
+referees[referee_id,name,dob]
+matches[match_num,match_date,host_team_id,guest_team_id,host_team_score,guest_team_score]
+players[player_id,name,dob,jersey_no,team_id]
+match_referees[match_num,referee,assistant_referee_1,assistant_referee_2,fourth_referee]
+teams[team_id,name,city,playground,jersey_home_color,jersey_away_color]
+managers[mgr_id,name,dob,team_id,since]
+
+Use the following condition :
+
+matches.host_team_id and matches.guest_team_id is joined to teams.team_id
+match_referees.referee,match_referees.assistant_referee_1,match_referees.assistant_referee_2 ,match_referees.fourth_referee is joined to referees.referee_id
+
+
+
+SELECT column_name
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE table_name = 'staff'
+ORDER BY ordinal_position;
+
+Write an SQL query to find the names and manager IDs of the managers who were born after the year 1990 and have been working as managers before the year 2021
+
