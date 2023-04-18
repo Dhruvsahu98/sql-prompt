@@ -1,0 +1,26 @@
+Use the following database table :
+
+referees[referee_id,name,dob]
+
+
+Use below database configuration :
+
+For the database connection, use the following connection string variables:
+
+
+
+database = sys.argv[1]	//name of the database is obtained from the command line argument
+
+user = os.environ.get('PGUSER') 
+
+password = os.environ.get('PGPASSWORD') 
+
+host = os.environ.get('PGHOST')
+
+port = os.environ.get('PGPORT')
+
+
+Write a Python program to print the name of the referee.referee_id of the referee is given in a file named ’id.txt’ resides in the same folder as python program file.
+
+The output of the python program is only name of the referee.
+For example, if the referee id of the referee is ’R0001’. Then output must be Tony Joseph Louis only
