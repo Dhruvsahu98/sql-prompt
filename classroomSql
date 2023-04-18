@@ -1,0 +1,25 @@
+
+
+Use the following database table :
+
+section[course_id,sec_id,semester,year,building,room_number,time_slot_id]
+classroom[building,room_number,capacity]
+takes[id,course_id,sec_id,semester,year,grade]
+time_slot[time_slot_id,day,start_hr,start_min,end_hr,end_min]
+teaches[id,course_id,sec_id,semester,year]
+course[course_id,title,dept_name,credits]
+prereq[course_id,prereq_id]
+student[id,name,dept_name,tot_cred]
+department[dept_name,building,budget]
+instructor[id,name,dept_name,salary]
+advisor[s_id,i_id]
+
+Use the following condition :
+
+All tables are join using primary and foreign keys
+
+
+
+Write an postgreSQL query to find the name of the departments along with the total number of students in each department, where the total number of students is more than 100
+
+
